@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Book = require('../models/Book');
-const { scrapeBooks } = require('../../scraper/scraper');
+const { scrapeBooks } = require('../../Scraper/scraper');
 
 // GET /api/books - Get paginated list of books with filters
 router.get('/books', async (req, res) => {
