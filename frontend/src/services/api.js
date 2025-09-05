@@ -1,6 +1,9 @@
 import axios from 'axios';
 
+// Remove '/books' from the base URL - just use the API root
+// Make sure this is exactly like this - no trailing slashes
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://book-explorer-cyki.onrender.com/api';
+console.log('API_BASE_URL:', API_BASE_URL); // Add this line to debug
 
 const api = axios.create({
   baseURL: API_BASE_URL,
